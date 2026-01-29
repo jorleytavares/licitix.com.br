@@ -1,10 +1,10 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/licitix/public_html
-    # - /bin/cp -R * $DEPLOYPATH
-    # - /bin/cp .env.example $DEPLOYPATH/.env
-    # - cd $DEPLOYPATH
+    - export DEPLOYPATH=/home/curr6441/public_html
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp .cpanel.yml $DEPLOYPATH
+    - cd $DEPLOYPATH
     - /usr/local/bin/composer install --no-dev --optimize-autoloader
     - /usr/local/bin/php artisan migrate --force
     - /usr/local/bin/php artisan config:cache
