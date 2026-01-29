@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/curr6441/public_html
+    - export DEPLOYPATH=/home/curr6441/licitix.com.br
     - /bin/cp -R * $DEPLOYPATH
     - /bin/cp .cpanel.yml $DEPLOYPATH
     - cd $DEPLOYPATH
