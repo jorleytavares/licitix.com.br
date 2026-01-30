@@ -11,3 +11,4 @@ deployment:
     - /usr/local/bin/php artisan route:cache
     - /usr/local/bin/php artisan view:cache
     - /usr/local/bin/php artisan storage:link
+    - ln -sfn /home/curr6441/licitix.com.br/public /home/curr6441/public_html
